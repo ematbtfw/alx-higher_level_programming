@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 b = 98
-f"{:d} Battery street". (b)
+f"{:d} Battery street". b \n
