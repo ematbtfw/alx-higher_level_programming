@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-b = 98
-f"{:d} Battery street". b \n
+number = 98
+my_str = f":d Battery street: {number}"
