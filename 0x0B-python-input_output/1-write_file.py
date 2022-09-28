@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-"""This module defines the read_lines function"""
+"""This module defines the write_file function"""
 
 
-def read_lines(filename="", nb_lines=0):
-    """Reads n lines of a text file (UTF8) and prints it to stdout
+def write_file(filename="", text=""):
+    """Writes a string to a text file and returns number of characters written
     Args:
-    filename (str): Filename
-    nb_lines (int): number of lines to read
+    filename (str): File to write to
+    text (str): text to write
     """
-    with open(filename, encoding='utf-8') as file:
-        if nb_lines <= 0:
-            for line in file:
-                print(line, end="")
-        else:
-            for line in range(nb_lines):
-                print(file.readline(), end="")
+    with open(filename, 'w', encoding='utf-8') as file:
+        return file.write(text)
